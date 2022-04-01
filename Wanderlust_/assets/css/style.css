@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+:root {
+  --main-bg-color: white;
+  --primary-color: #3a3446;
+  --secondary-color: #5e6aa4;
+  --alternate-color: #a5a0da;
+  --alert-color: #cb7070;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+header {
+  padding: 40px auto;
+}
+.navbar {
+  margin: auto;
+  padding: 20px;
+  color: white;
+}
+.bg-dark-mode {
+  background-color: var(--secondary-color);
+}
+
+.navbar-brand {
+  margin: auto 10px;
+  font-weight: 500;
+  color: white;
+}
+.navbar-brand:hover {
+  margin: auto 10px;
+  font-weight: 500;
+  color: var(--alternate-color);
+}
+
+#navbarNav {
+  width: auto;
+  float: right;
+}
+
+.nav-item {
+  margin: auto 10px;
+}
+
+.nav-item a {
+  color: var(--alternate-color);
+
+  font-size: 17px;
+  font-weight: 400;
+  border: 2px solid var(--main-bg-color);
+}
+.nav-item a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#btnCekPembayaran {
+  transition: 500ms;
+  border: 2px solid white;
+}
+
+#btnCekPembayaran:hover {
+  color: var(--secondary-color);
+  background-color: var(--main-bg-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  color: var(--main-bg-color);
+  border: none;
+  font-weight: 400;
+  padding: 10px 45px;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.breadcrumb {
+  margin: 20px auto 0;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.breadcrumb a:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+
+.hero {
+  padding-top: 50px;
+  background-image: linear-gradient(
+    rgb(214, 174, 225, 0.8),
+    rgb(165, 160, 218, 1)
+  );
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  margin: 50px auto 0;
+  height: 750px;
+}
+.hero .title {
+  font-family: "Poppins";
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+.hero .subtitle {
+  font-size: 20px;
+  font-weight: lighter;
+  color: var(--main-bg-color);
+  margin-bottom: 10px;
+}
+.hero .btn {
+  background-color: var(--main-bg-color);
+  color: var(--alternate-color);
+  padding: 15px 30px;
+  margin-bottom: 100px;
+}
+
+#img-hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  top: -62px;
+  height: auto;
+}
+
+.hero .btn:hover {
+  background-color: var(--primary-color);
+  color: var(--main-bg-color);
+}
+
+/* Akhir hero section */
+
+/* informasi pengunjung */
+
+#information-pengunjung {
+  width: 60%;
+  padding: 50px 0;
+  background-color: white;
+  position: relative;
+  top: -90px;
+  border-radius: 20px;
+
+  box-shadow: 0px 5px 10px 0px #0000001a;
+}
+.icon {
+  position: relative;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 0 auto 10px auto;
+  fill: white;
+}
+#information-pengunjung .text {
+  color: #6e8899;
+}
+#information-pengunjung b {
+  color: var(--primary-color);
+}
+
+/* Akhir informasi pengunjung */
+
+/* categories */
+
+#categories {
+  padding: 50px 50px;
+  margin: 100px auto;
+  background-color: #ece6f4;
+  /* background-image: url("/assets/img/bg-gunung.jpg"); */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-categories {
+  padding: 10px;
+  text-align: center;
+  margin: 0 20px;
+
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  transition: 700ms;
+}
+
+.card-categories:hover {
+  background-color: rgb(214, 174, 225, 0.8);
+}
+
+.card-title-categories {
+  color: var(--primary-color);
+}
+
+.img-categories {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+
+  width: 180px;
+  height: 200px;
+}
+
+/* akhir categories */
+
+/* List Section */
+#list-section {
+}
+.section-title {
+  margin: 50px auto 50px;
+  text-align: center;
+}
+
+.list-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  color: #6e8899;
+}
+
+.list-title {
+  font-size: 30;
+  font-weight: bold;
+  font-family: "Quicksand";
+  color: #1c4057;
+}
+
+.card {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 10px 20px 10px;
+  border: none;
+  box-shadow: 0px 5px 10px 0px #0000001a;
+}
+
+.card:hover {
+  z-index: 1;
+}
+
+.card-img-top {
+  padding: 5px;
+  border-radius: 10px;
+  width: auto;
+  height: 150px;
+}
+.card-title {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 20;
+}
+
+#nama-hotel {
+  height: 50px;
+}
+
+.btnTest {
+  border: none;
+  background-color: white;
+  z-index: 2;
+}
+.card-text {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.location {
+  fill: #6e8899;
+  width: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+.harga {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  padding: 10px;
+  width: 156px;
+  text-align: center;
+  background-color: #ece6f4;
+  border-radius: 10px;
+}
+
+.card-body > a {
+  text-decoration: none;
+}
+
+/* Akhir List Section */
+
+/* Halaman Konfirmasi pembayaran */
+
+/* Pembayaran */
+
+#pembayaran {
+  float: left;
+  width: 65%;
+}
+.title-pembayaran {
+  text-align: left;
+  font-family: "Poppins";
+  margin: 40px 20px;
+}
+.subtitle {
+  font-size: 16px;
+  color: #6e8899;
+}
+.total-bayar,
+.kode-bayar {
+  color: #0194f3;
+  font-weight: bold;
+}
+
+#status-pembayaran {
+  color: var(--alert-color);
+  font-weight: bold;
+}
+
+/* Akhir pembayaran */
+
+/* Konfirmasi */
+
+#konfirmasi {
+  float: right;
+}
+
+#output {
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 75%;
+}
+
+/* Akhir konfirmasi */
+
+/* Akhir halaman Konfirmasi pembayaran */
+
+/* Checkout */
+#checkout {
+  float: left;
+  width: 65%;
+}
+#title-checkout {
+  text-align: left;
+  font-family: "Poppins";
+  margin: 40px 20px;
+}
+.card-checkout {
+  overflow: hidden;
+  margin-top: 25px;
+}
+.card-img-left {
+  padding: 5px;
+  border-radius: 10px;
+  width: 185px;
+  height: 125px;
+}
+#rincian-biaya {
+  float: right;
+  width: 35%;
+  padding-top: 40px;
+}
+#card-rincian-biaya {
+  padding: 20px 20px;
+}
+
+.card-text {
+  font-size: 17px;
+}
+#small-box {
+  border: none;
+  box-shadow: none;
+  background-color: #f5f5f5;
+}
+.total-rincian {
+  color: #0194f3;
+  font-weight: bold;
+  font-size: large;
+}
+#hrsDibayar {
+  padding: 10px 0 10px 0;
+}
+/* Akhir Checkout */
+
+/* Konfirmasi */
+#confirmation {
+  float: left;
+  width: 65%;
+}
+.card-bank {
+  padding: 5px;
+  margin: 20px 10px 10px 10px;
+}
+.logo-bank {
+  padding: 5px;
+  border-radius: 10px;
+  width: 75px;
+  height: 50px;
+}
+#nama-bank {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 7px 0 7px;
+}
+#norek {
+  margin: 7px 0 7px;
+  font-weight: lighter;
+}
+#namapt {
+  margin: 7px 0 7px;
+  font-weight: lighter;
+}
+#cek-pembayaran {
+  float: right;
+  width: 35%;
+  padding-top: 40px;
+}
+.box-bank {
+  height: 50px;
+  width: 75px;
+  border-radius: 5px;
+  background-color: #e5f9ff;
+}
+#ketikKode {
+  margin: 10px 0;
+}
+/* Akhir Konfirmasi */
+
+/* room detail */
+
+#room-img {
+  width: 100%;
+  margin: 0;
+  height: 350px;
+  border-radius: 10px;
+}
+#imgroom {
+  background-image: url("/assets/img/thumb/3.jpeg");
+  height: auto;
+  padding-top: 0;
+  margin: 50px auto 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  margin: 50px auto;
+  height: 350px;
+  border-radius: 10px;
+}
+
+#deskripsi {
+  margin-top: 20px;
+  padding-right: 100px;
+}
+#maps {
+  margin: 20px 20px 20px 0;
+  width: 600px;
+  height: 400px;
+}
+#fasilitas-list {
+  display: flex;
+}
+
+.fas-icon {
+  fill: var(--secondary-color);
+  margin: 20px 20px 30px;
+}
+
+.fas-icon > svg {
+  width: 50px;
+  height: 50px;
+}
+
+#fas-name {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.desc {
+  font-size: 20px;
+}
+
+#btnLanjutkanPembayaran {
+  width: 100%;
+}
+
+/* AKhir room detail */
+/* footer */
+footer {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  color: white;
+
+  text-align: center;
+}
+
+#cr {
+  padding: 20px;
+  text-align: center;
+}
+
+#creator {
+  margin: 20px 0;
+}
+
+#wander {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#lust {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#table-invoice {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+#table-invoice td {
+  padding: 10px;
+}
